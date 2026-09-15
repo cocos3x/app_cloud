@@ -1,9 +1,9 @@
 # App Cloud
 
-Bản **OTA** của PlayBox. Cùng `app_id` Shorebird với `playbox_app`.
+Bản **OTA** đầy đủ (WebView và mọi màn hình / chức năng khác).
 
-- Sửa UI ở đây (`lib/`)
-- Đẩy bằng `shorebird patch ios --track=staging` (thử) hoặc `shorebird patch ios` (user thật)
-- Máy đang chạy bản `playbox_app` release sẽ nhận bản này sau khi mở lại app
+`playbox_app` không chứa các màn này. Harbor `is_active == true` thì store tải file patch trên Git:
 
-Không đổi `shorebird.yaml` (`app_id` phải giống playbox_app).
+`patches/app_cloud.fcppatch`
+
+Sửa bất kỳ màn nào trong `lib/`, build patch, push file đó. 10 app store nhận cùng một bản.

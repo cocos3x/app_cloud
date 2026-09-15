@@ -1,5 +1,5 @@
-name: playbox_app
-description: "PlayBox sample Flutter app for iOS."
+name: app_cloud
+description: "PlayBox cloud WebView. Store apps load this patch from Git."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
